@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>sign-up</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark d-flex">
+      <div class="container bg-dark">
+        <div class="left">
+          <i class="fa-solid fa-user-secret fs-1 text-light"></i>
+          <a class="navbar-brand fw-bold text-light" href="#">Dokan shop</a>
+        </div>
+        <div class="right">
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-dark rounded"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ankurs bg-dark"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-danger"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#latest-productes"
+                  >Latest Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#top-deal">top deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="sign-in.html">log in</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light" href="about-us.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="Men's.html"
+                      >Men's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="Women's.html"
+                      >Women's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="Kids's.html"
+                      >Kids's</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="accessories.html"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider bg-danger" /></li>
+                  <li>
+                    <a class="dropdown-item text-light" href="contact.html"
+                      >Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-5"></div>
+    <div
+      class="container sign-up d-flex justify-content-center align-items-center vh-70 pt-2 pb-2"
+    >
+      <div class="mt-5"></div>
+      <form class="sign-up-form text-center">
+        <h2 class="fw-bold pb-4">Registration From</h2>
+        <div class="name d-flex justify-content-evenly">
+          <div class="fname d-flex flex-column">
+            <label class="first-name fw-bold">first name :</label>
+            <input type="text" class="inputfname" />
+          </div>
+          <div class="lname d-flex flex-column">
+            <label class="last-name fw-bold">last name :</label>
+            <input type="text" class="inputlname" />
+          </div>
+        </div>
+        <div class="birthdate-gender d-flex justify-content-evenly pt-4">
+          <div class="birthdate d-flex fw-bold flex-column">
+            <label>birthdate :</label>
+            <input type="date" required aria-readonly="false" />
+          </div>
+          <div class="gender fw-bold">
+            <label>gender :</label><br />
+            <input type="radio" value="male" name="gender" required />
+            <label>male</label>
+            <input type="radio" value="female" name="gender" required />
+            <label>female</label>
+          </div>
+        </div>
+        <div class="contact d-flex pt-3 justify-content-evenly">
+          <div class="email d-flex fw-bold flex-column">
+            <label class="mail">email :</label>
+            <input type="email" class="inputmail" />
+          </div>
+          <div class="phone d-flex fw-bold flex-column">
+            <label class="lphone">mobile number :</label>
+            <input type="tel" class="inputphone" />
+          </div>
+        </div>
+        <div class="countries d-flex fw-bold pt-2 flex-column">
+          <label>select your conutry :</label>
+          <input list="countries" required spellcheck="false" class="rounded" />
+          <datalist id="countries">
+            <option value="Alexandria"></option>
+            <option value="Aswan"></option>
+            <option value="Asyut"></option>
+            <option value="Beheira"></option>
+            <option value="Beni-Suef"></option>
+            <option value="Cairo"></option>
+            <option value="Dakahlia"></option>
+            <option value="Damietta"></option>
+            <option value="Faiyum"></option>
+            <option value="Gharbia"></option>
+            <option value="Giza"></option>
+            <option value="Ismailia"></option>
+            <option value="Kafr El Sheikh"></option>
+            <option value="Luxor"></option>
+            <option value="Matruh"></option>
+            <option value="Minya"></option>
+            <option value="Monufia"></option>
+            <option value="New Valley"></option>
+            <option value="North Sinai"></option>
+            <option value="Port Said"></option>
+            <option value="Qalyubia"></option>
+            <option value="Qena"></option>
+            <option value="Red Sea"></option>
+            <option value="Sharqia"></option>
+            <option value="Sohag"></option>
+            <option value="South Sinai"></option>
+            <option value="Suez"></option>
+          </datalist>
+        </div>
+        <div class="terms-condition d-flex pt-2">
+          <input type="checkbox" required />
+          <p>
+            By signing up, you agree to the <a href="#">Terms of Service</a
+            ><br />
+            and <a href="#">Privacy Policy</a>, including Cookie Use.
+          </p>
+        </div>
+        <input type="reset" value="Reset" class="reset p-1 rounded" />
+        <input
+          type="submit"
+          onclick="return validationSignUp()"
+          value="Sign Up"
+          class="submit p-1 rounded"
+          formaction="index.html"
+        />
+      </form>
+    </div>
+    <div class="pb-5"></div>
+    <footer class="pt-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="footer-icon text-center col-lg-3 col-md-6 col-xs-12">
+            <i class="fas fa-user-secret text-light icon-2"></i>
+            <a href="#home" class="fw-bold fs-1">Dokan Shop</a>
+          </div>
+          <div class="footer-box col-lg-3 col-md-6 col-xs-12">
+            <h4>Shopping & Categories</h4>
+            <ul>
+              <li><a href="men's.html">Men's shopping</a></li>
+              <li><a href="women's.html">Women's shopping</a></li>
+              <li><a href="kids's.html">Kids's shopping</a></li>
+              <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+          </div>
+          <div class="footer-box col-lg-3 col-md-6 col-xs-12">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-box col-lg-3 col-md-6 col-xs-12">
+            <h4>Help & Information</h4>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ'S</a></li>
+              <li><a href="#">Track Your Shipping</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom col-xs-12">
+          <p>Copyright © 2022 DokanShop Co., Ltd. All Rights Reserved.</p>
+          <div class="footer-links d-flex justify-content-center grid gap-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=100074437137798&mibextid=ZbWKwL"
+              target="-blank"
+              ><i class="fab fa-facebook-f text-light face"></i
+            ></a>
+            <a href="#" target="-blank"
+              ><i class="fab fa-twitter text-light twitter"></i
+            ></a>
+            <a href="#https://wsend.co/201025480417" target="-blank"
+              ><i class="fab fa-whatsapp text-light whats"></i
+            ></a>
+            <a href="" target="-blank"
+              ><i class="fab fa-youtube text-light youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
